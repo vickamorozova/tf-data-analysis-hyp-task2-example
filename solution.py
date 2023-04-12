@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 from scipy.stats import anderson_ksamp
@@ -10,4 +9,3 @@ def solution(x: np.array, y: np.array) -> bool:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     return anderson_ksamp([x, y]).pvalue < 0.09
-
